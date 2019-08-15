@@ -37,6 +37,8 @@ public class CoffeeOrderService {
 
         CoffeeOrder coffeeOrder = CoffeeOrder.builder()
                 .customer("Li Lei")
+                // Collections.singletonList
+                // 这个方法主要用于只有一个元素的优化，减少内存分配，无需分配额外的内存，可以从SingletonList内部类看得出来,由于只有一个element,因此可以做到内存分配最小化，相比之下ArrayList的DEFAULT_CAPACITY=10个。
                 .coffees(Collections.singletonList(espresso))
                 .build();
 
