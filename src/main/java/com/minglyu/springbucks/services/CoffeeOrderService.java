@@ -48,6 +48,7 @@ public class CoffeeOrderService {
                 .customer("Han Meimei")
                 .coffees(Arrays.asList(latte, espresso))
                 .build();
+
         coffeeOrderRepository.save(coffeeOrder);
 
     }
